@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmed | Portfolio</title>
+  <meta name="author" content="Ahmed Hamdy" />
+  <meta name="theme-color" content="#b6542b" />
+  <meta name="description" content="Ahmed Hamdy Frontend & UI Developer. أبني مواقع أعمال حديثة وصفحات شخصية تعمل بشكل ممتاز وتصميمات عصرية." />
+  <meta name="keywords" content="Ahmed Hamdy, Frontend Developer, UI Developer, Web Development, HTML, CSS, JavaScript, مطور واجهات أمامية, مصمم واجهات, تطوير الويب, بورتفوليو, React, تصميم مواقع" />
+  <!-- Open Graph Meta Tags for Social Media Links -->
+  <meta property="og:title" content="Ahmed Hamdy | Frontend Developer" />
+  <meta property="og:description" content="مطور واجهات أمامية أصمم تجارب رقمية سريعة ونظيفة وعصرية. تصفح أعمالي الآن!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourwebsite.com/" />
+  <meta property="og:site_name" content="Ahmed Hamdy Portfolio" />
+  <meta property="og:locale" content="ar_EG" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" />
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@AhmedHa16224863" />
+  <meta name="twitter:title" content="Ahmed Hamdy | Frontend & UI Developer" />
+  <meta name="twitter:description" content="مطور واجهات أمامية أصمم تجارب رقمية سريعة ونظيفة وعصرية. تصفح أعمالي الآن!" />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://yourwebsite.com/" />
+  <!-- Structured Data for Google SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ahmed Hamdy",
+    "jobTitle": "Frontend & UI Developer",
+    "url": "https://yourwebsite.com/",
+    "sameAs": [
+      "https://www.linkedin.com/in/ahmed-hamdy-b1620a392",
+      "https://github.com/Ahmedhamdy009",
+      "https://x.com/AhmedHa16224863"
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="loader" class="loader-container">
+    <div class="loader-brand">AH</div>
+  </div>
+
+  <div class="page-shell">
+    <header class="hero reveal">
+      <nav class="topbar">
+        <div class="brand">AH</div>
+        <button class="menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" type="button">
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="#about" data-i18n="navAbout">نبذة</a>
+          <a href="#projects" data-i18n="navProjects">المشاريع</a>
+          <a href="#skills" data-i18n="navSkills">المهارات</a>
+          <a href="#contact" data-i18n="navContact">التواصل</a>
+        </div>
+        <div class="topbar-actions">
+          <button class="btn btn-secondary theme-btn" id="themeToggle" type="button">
+            <i class="fa-solid fa-moon" aria-hidden="true"></i>
+            <span id="themeToggleText">Dark</span>
+          </button>
+          <button class="btn btn-secondary lang-btn" id="langToggle" type="button" aria-label="Switch to English"
+            title="Switch to English">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+            <span id="langToggleText">EN</span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <div class="hero-text reveal">
+          <p class="eyebrow" data-i18n="heroEyebrow">موقع شخصي</p>
+          <h1>Ahmed Hamdy</h1>
+          <div class="typewriter-wrap" aria-hidden="true">
+            <span id="typewriterText"></span><span class="cursor-blink">|</span>
+          </div>
+          <p class="lead" data-i18n="heroLead">
+            مطور واجهات أمامية أصمم تجارب رقمية سريعة ونظيفة وعصرية.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects" data-i18n="heroPrimaryCta">شاهد أعمالي</a>
+            <a class="btn btn-secondary" href="#contact" data-i18n="heroSecondaryCta">تواصل معي</a>
+            <a class="btn btn-outline cv-btn" href="Ahmed_Hamdy_CV.pdf" download="Ahmed_Hamdy_CV.pdf" aria-label="Download CV" title="Download CV">
+              <i class="fa-solid fa-file-arrow-down"></i> <span data-i18n="heroDownloadCv">تحميل السيرة الذاتية</span>
+            </a>
+          </div>
+          <ul class="hero-stats">
+            <li>
+              <strong>3+</strong>
+              <span data-i18n="statExperience">سنوات خبرة</span>
+            </li>
+            <li>
+              <strong>18</strong>
+              <span data-i18n="statProjects">مشروعًا مكتملًا</span>
+            </li>
+            <li>
+              <strong>100%</strong>
+              <span data-i18n="statPassion">شغف بالتطوير</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="avatar">AH</div>
+          <p class="card-role" data-i18n="heroCardRole">Frontend & UI Developer</p>
+          <p class="card-copy" data-i18n="heroCardCopy">
+            أبني مواقع أعمال حديثة وصفحات شخصية تعمل بشكل ممتاز على جميع الأجهزة.
+          </p>
+          <div class="mini-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>WordPress</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section about reveal" id="about">
+        <div class="section-heading">
+          <p class="section-label" data-i18n="aboutLabel">نبذة مختصرة</p>
+          <h2 data-i18n="aboutTitle">من أنا؟</h2>
+        </div>
+        <div class="about-grid">
+          <article class="panel reveal">
+            <p data-i18n="aboutTextOne">
+              أركز على بناء مواقع شخصية وصفحات هبوط بتصميم واضح وتفاصيل احترافية.
+            </p>
+          </article>
+          <article class="panel reveal">
+            <p data-i18n="aboutTextTwo">
+              أستمتع بتحويل الأفكار إلى واجهات عملية وسريعة الاستجابة وسهلة الاستخدام للزوار.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects reveal" id="projects">
+        <div class="section-heading">
+          <p class="section-label" data-i18n="projectsLabel">أبرز الأعمال</p>
+          <h2 data-i18n="projectsTitle">مشاريع مختارة</h2>
+        </div>
+
+        <div class="projects-filter" id="projectFilters">
+          <button class="filter-btn active" data-filter="all" data-i18n="filterAll">الكل</button>
+          <button class="filter-btn" data-filter="web" data-i18n="filterWeb">ويب</button>
+          <button class="filter-btn" data-filter="wordpress" data-i18n="filterWordpress">ووردبريس</button>
+        </div>
+
+        <div class="cards" id="projectList"></div>
+        <div class="load-more-wrap" id="loadMoreWrap" style="display: none; text-align: center; margin-top: 36px;">
+          <button class="btn btn-primary" id="loadMoreBtn" data-i18n="loadMore">عرض المزيد</button>
+        </div>
+      </section>
+
+      <section class="section skills reveal" id="skills">
+        <div class="section-heading">
+          <p class="section-label" data-i18n="skillsLabel">المهارات</p>
+          <h2 data-i18n="skillsTitle">الأدوات التي أستخدمها</h2>
+        </div>
+        <div class="skills-wrap" id="skillsList"></div>
+      </section>
+
+      <section class="section contact reveal" id="contact">
+        <div class="section-heading">
+          <p class="section-label" data-i18n="contactLabel">تواصل</p>
+          <h2 data-i18n="contactTitle">جاهز نبدأ مشروعك القادم؟</h2>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-box reveal">
+            <p data-i18n="contactText">يمكنك التواصل معي عبر هذه المنصات.</p>
+            <div class="contact-links vertical-links">
+              <a class="contact-link-item email" href="mailto:ahmedhamdybayoumi2006@gmail.com" aria-label="Email" title="Email">
+                <span class="icon-wrapper"><i class="fa-solid fa-envelope"></i></span>
+                <span class="link-text">البريد الإلكتروني</span>
+              </a>
+              <a class="contact-link-item linkedin" href="https://www.linkedin.com/in/ahmed-hamdy-b1620a392" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                <span class="icon-wrapper"><i class="fa-brands fa-linkedin-in"></i></span>
+                <span class="link-text">LinkedIn</span>
+              </a>
+              <a class="contact-link-item facebook" href="https://www.facebook.com/61565314121039" target="_blank" rel="noreferrer" aria-label="Facebook" title="Facebook">
+                <span class="icon-wrapper"><i class="fa-brands fa-facebook-f"></i></span>
+                <span class="link-text">Facebook</span>
+              </a>
+              <a class="contact-link-item instagram" href="https://www.instagram.com/ahmed_hamdy_09" target="_blank" rel="noreferrer" aria-label="Instagram" title="Instagram">
+                <span class="icon-wrapper"><i class="fa-brands fa-instagram"></i></span>
+                <span class="link-text">Instagram</span>
+              </a>
+              <a class="contact-link-item tiktok" href="https://www.tiktok.com/@ahmed00118834" target="_blank" rel="noreferrer" aria-label="TikTok" title="TikTok">
+                <span class="icon-wrapper"><i class="fa-brands fa-tiktok"></i></span>
+                <span class="link-text">TikTok</span>
+              </a>
+              <a class="contact-link-item twitter" href="https://x.com/AhmedHa16224863" target="_blank" rel="noreferrer" aria-label="Twitter" title="Twitter">
+                <span class="icon-wrapper"><i class="fa-brands fa-x-twitter"></i></span>
+                <span class="link-text">X (Twitter)</span>
+              </a>
+              <a class="contact-link-item github" href="https://github.com/Ahmedhamdy009" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub">
+                <span class="icon-wrapper"><i class="fa-brands fa-github"></i></span>
+                <span class="link-text">GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm">
+            <label for="name" data-i18n="formNameLabel">الاسم</label>
+            <input id="name" name="name" type="text" required data-i18n-placeholder="formNamePlaceholder"
+              placeholder="اسمك" />
+
+            <label for="email" data-i18n="formEmailLabel">البريد الإلكتروني</label>
+            <input id="email" name="email" type="email" required data-i18n-placeholder="formEmailPlaceholder"
+              placeholder="example@mail.com" />
+
+            <label for="phone" data-i18n="formPhoneLabel">رقم الهاتف</label>
+            <input id="phone" name="phone" type="tel" required data-i18n-placeholder="formPhonePlaceholder"
+              placeholder="010xxxxxxxx" />
+
+            <label for="message" data-i18n="formMessageLabel">الرسالة</label>
+            <textarea id="message" name="message" rows="5" required data-i18n-placeholder="formMessagePlaceholder"
+              placeholder="اكتب رسالتك هنا"></textarea>
+
+            <button class="btn btn-primary" id="sendBtn" type="submit" data-i18n="formSendButton">إرسال الرسالة</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite" style="display: none;"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <button class="scroll-top" id="scrollTop" aria-label="العودة للأعلى">↑</button>
+
+  <a href="https://wa.me/201098935058" class="whatsapp-float" target="_blank" rel="noreferrer" aria-label="WhatsApp"
+    title="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <div class="toast-container" id="toastContainer"></div>
+
+</body>
+
+</html>
